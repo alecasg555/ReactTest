@@ -1,0 +1,17 @@
+.result{
+    margin: 15px;
+    margin-left: 0px;
+}
+.result > p{
+    margin: 0px;
+    padding: 0px;
+}
+.result-title{
+    font-weight: normal;
+}
+.result-url{
+    color: #006D21;
+}
+.result > h2{
+ margin-block: 0;   
+}
