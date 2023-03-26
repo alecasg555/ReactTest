@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { bingResults } from '../../actions/searchActions';
 
 const InputSearch = () => {
