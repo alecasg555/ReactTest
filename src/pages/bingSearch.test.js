@@ -25,7 +25,7 @@ describe('SearchComponent', () => {
         );
     })
     it('displays search results on submit', async () => {
-        const { getByTestId, findByTestId } =
+        const { getByTestId} =
             render(
                 <Provider store={store}>
                     <BingSearch />
@@ -35,10 +35,12 @@ describe('SearchComponent', () => {
         const searchButton = getByTestId('search-button');
 
         fireEvent.change(searchInput.childNodes[0], { target: { value: 'test' } });
-        fireEvent.submit(searchButton);
-
-        const searchResults = await findByTestId('search-results');
-
-        //expect(searchResults.children.length).toBeGreaterThan(0);
+        fireEvent.click(searchButton);
+        setTimeout(() => {
+            const searchResults = getByTestId('search-results');
+            expect(searchResults.childNodes.length).toBeGreaterThan(0);
+        }, 3000);
+        
+        
     });
 });

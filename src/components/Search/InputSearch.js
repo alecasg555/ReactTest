@@ -24,7 +24,7 @@ const InputSearch = () => {
         <Paper
             component="form"
             sx={{ p: '2px 15px', display: 'flex', alignItems: 'center', width: 650, margin: '0px auto' }}
-        >
+            >
 
             <InputBase
                 sx={{ ml: 1, flex: 1 }}
@@ -32,7 +32,7 @@ const InputSearch = () => {
                 inputProps={{ 'aria-label': 'search google maps' }}
                 onChange={handleInputChange}
                 data-testid='search-input'
-            />
+                />
             <IconButton onClick={handleFormSubmit} type="button" sx={{ p: '10px' }} aria-label="search" data-testid='search-button'>
                 <SearchIcon />
             </IconButton>

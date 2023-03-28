@@ -1,5 +1,6 @@
 //importing required libraries
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 //Action to manage if the bing request is loading
 export const bingRequest = () => ({
@@ -19,15 +20,19 @@ export const bingRequestFailure = () => ({
 
 //Action that consume the bing search API and save it into store
 export const bingResults = (query) => {
-  return async (dispatch) => {
+  return async (dispatch,getState) => {
     dispatch(bingRequest());
     try {
+      //get api key
+      const state = getState();
+      const apiKey = state.search.apiKey;
+
       //Request to bing search API
       const response = await axios.get(
         `https://api.bing.microsoft.com/v7.0/search?q=${query}`,
         {
           headers: {
-            'Ocp-Apim-Subscription-Key': '12af5adc2b654b79a104c5758bb7147a',
+            'Ocp-Apim-Subscription-Key': apiKey,
           },
         }
       );

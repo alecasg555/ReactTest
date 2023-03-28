@@ -33,10 +33,8 @@ describe('SearchComponent', () => {
             </Provider>
         );
         const searchInput = getByTestId('search-input');
-        console.log("fdasf",searchInput);
-        fireEvent.change(searchInput.childNodes[0], { target: { value: 'test' } });
-
-        //expect(searchInput.value).toBe('test');
+        fireEvent.change(searchInput.childNodes[0], { target: { value: 'test' } })
+        expect(searchInput.childNodes[0].value).toBe('test');
     });
 
 

@@ -1,6 +1,7 @@
 //Result initial state
 const initialState = {
     results: [],
+    apiKey:'12af5adc2b654b79a104c5758bb7147a',
     isLoading: false,
     error: ''
   };
