@@ -27,5 +27,5 @@ Note: this is a one-way operation. Once you eject, you can’t go back!
 
 Ejects the project from the standard React scripts configuration, exposing all configuration files and dependencies so that they can be customized.
 
-#Usage
+# Usage
 Once the app is running, you can enter a search query in the search bar and click the search button. The app will display the top search results from Bing.
