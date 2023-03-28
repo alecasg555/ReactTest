@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../styles/components/Results/result.css';
+
+//Component that return a single result from bing search API
 const Result = ({ title, url, description }) => {
     return (
         <div className='result' align='left'  >
