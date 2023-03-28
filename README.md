@@ -1,7 +1,7 @@
-#Bing Search App
+# Bing Search App
 This is a React app that allows users to search the web using the Bing Search API and displays the results.
 
-#Getting Started
+# Getting Started
 To get started with this app, follow these steps:
 
 Clone this repository to your local machine
