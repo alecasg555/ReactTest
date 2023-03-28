@@ -1,7 +1,5 @@
 //importing required libraries
 import axios from 'axios';
-import { useSelector } from 'react-redux';
-
 //Action to manage if the bing request is loading
 export const bingRequest = () => ({
   type: 'BING_REQUEST',
