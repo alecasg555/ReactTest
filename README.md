@@ -12,7 +12,7 @@ To get started with this app, follow these steps:
   
 4-Start the app by running npm start.  
 
-#Available Scripts
+# Available Scripts
 In the project directory, you can run:
 
 ### `npm start
