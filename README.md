@@ -4,10 +4,10 @@ This is a React app that allows users to search the web using the Bing Search AP
 # Getting Started
 To get started with this app, follow these steps:
 
-##Clone this repository to your local machine
-##Install dependencies by running npm install
-##Create a .env file in the root of the project and add your Bing Search API key as REACT_APP_BING_API_KEY
-##Start the app by running npm start
+Clone this repository to your local machine  
+Install dependencies by running npm install  
+Modify the apiKey field in state of searchReducer to set up your key  
+Start the app by running npm start  
 
 #Available Scripts
 In the project directory, you can run:
