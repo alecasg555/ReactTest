@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import {  useDispatch } from 'react-redux';
 import { bingResults } from '../../actions/searchActions';
 
+//Component that return a text input to make the a search in the bing API
 const InputSearch = () => {
     const dispatch = useDispatch();
     const [text, setText] = React.useState('');

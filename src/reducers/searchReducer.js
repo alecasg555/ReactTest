@@ -1,8 +1,11 @@
+//Result initial state
 const initialState = {
     results: [],
     isLoading: false,
     error: ''
   };
+
+//Reducer for bin search API
 const searchReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'BING_REQUEST':

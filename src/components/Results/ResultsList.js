@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import Result from './Result';
 
+//Component that return a list of result from bing search API
 const Results = () => {
     const webResults = useSelector(state => state.search.results);
     useEffect(() => {
