@@ -2,6 +2,8 @@
 This is a React app that allows users to search the web using the Bing Search API and displays the results.
 
 # Getting Started
+### liveUrl
+https://gentle-mushroom-0f95ad110.2.azurestaticapps.net/
 To get started with this app, follow these steps:
 
 1-Clone this repository to your local machine.  
